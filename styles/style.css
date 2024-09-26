@@ -61,7 +61,8 @@ footer {
     justify-content: space-between;
 }
 
-section .title {
+section .title,
+.otherProject {
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -71,7 +72,8 @@ section .title {
     font-family: 'Ubuntu', sans-serif;
 }
 
-section .title::before {
+section .title::before,
+.otherProject::before {
     content: "";
     position: absolute;
     bottom: 0px;
@@ -82,7 +84,8 @@ section .title::before {
     transform: translateX(-50%);
 }
 
-section .title::after {
+section .title::after,
+.otherProject::after {
     position: absolute;
     bottom: -8px;
     left: 50%;
@@ -538,6 +541,65 @@ section .title::after {
     margin-bottom: 15px;
 }
 
+.skills .skills-content .left .bars {
+    margin-bottom: 15px;
+}
+
+/* ------Left-------- */
+.skills .skills-content .left .info {
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .left span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills .skills-content .left .line {
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+
+.skills .skills-content .left .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+
+.skills-content .left .html::before {
+    width: 90%;
+}
+
+.skills-content .left .css::before {
+    width: 70%;
+}
+
+.skills-content .left .js::before {
+    width: 80%;
+}
+
+.skills-content .left .jQuery::before {
+    width: 50%;
+}
+
+.skills-content .left .bootstrap::before {
+    width: 70%;
+}
+
+.skills-content .left .ajax::before {
+    width: 70%;
+}
+
+/* -----Right--------- */
+
 .skills .skills-content .right .info {
     display: flex;
     margin-bottom: 5px;
@@ -566,24 +628,28 @@ section .title::after {
     background: crimson;
 }
 
-.skills-content .right .html::before {
+.skills-content .right .php::before {
     width: 90%;
 }
 
-.skills-content .right .css::before {
-    width: 60%;
+.skills-content .right .laravel::before {
+    width: 90%;
 }
 
-.skills-content .right .js::before {
+.skills-content .right .ql::before {
     width: 80%;
 }
 
-.skills-content .right .php::before {
-    width: 50%;
+.skills-content .right .net::before {
+    width: 60%;
 }
 
-.skills-content .right .mysql::before {
-    width: 70%;
+.skills-content .right .spring::before {
+    width: 60%;
+}
+
+.skills-content .right .api::before {
+    width: 80%;
 }
 
 
@@ -592,6 +658,11 @@ section .title::after {
 
 .courseProject .title::after {
     content: "course project";
+}
+
+.otherProject::after {
+    content: "Other Project";
+    margin-top: 30px;
 }
 
 .courseProject .project_cards_item {
@@ -868,7 +939,7 @@ section .title::after {
 
 /* footer section styling */
 footer {
-    background: #111;
+    background: #1E3C2D;
     padding: 15px 23px;
     color: #fff;
     text-align: center;
