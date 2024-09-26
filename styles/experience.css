@@ -1,0 +1,116 @@
+.experience .title::after {
+    content: "what i am did";
+}
+
+.experience {
+    font-family: "Poppins", sans-serif;
+    background-color: #e6edf7;
+    color: #202020;
+    padding-top: 115px;
+    padding-bottom: 120px;
+}
+
+.experience-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0 50px;
+}
+
+.experience_card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px 30px;
+    overflow: hidden;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 2s ease;
+}
+
+.experience_card:hover {
+    background-color: #1E3C2D;
+}
+
+.experience_card .icon {
+    display: inline-block;
+    margin-bottom: 26px;
+    width: 70px;
+    height: 70px;
+    background-color: #7C9F72;
+    border-radius: 5px;
+    line-height: 70px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    align-self: flex-start;
+}
+
+.experience_contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.experience_card_title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.experience_card:hover .experience_card_title {
+    color: #ffffff;
+}
+
+.experience_card_description {
+    text-align: justify;
+    font-size: 14px;
+    margin-bottom: 10px;
+    max-width: 100%;
+}
+
+.experience_card:hover .experience_card_description {
+    color: #cff4a7;
+}
+
+.experience_card a {
+    background-color: #cff4a7;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: auto;
+    text-align: center;
+    padding: 8px 30px;
+    width: 100%;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.experience_card:hover a {
+    color: #ffffff;
+    border: 1px solid #FAA300;
+    background: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .experience-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .experience-content {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 0 20px;
+    }
+}
